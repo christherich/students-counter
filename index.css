@@ -1,0 +1,71 @@
+/* center all */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* center all the thins */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* metro design h1 */
+h1 {
+  font-family: "Segoe UI Light", "Segoe UI", "Segoe WP", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 3.5em;
+  font-weight: 300;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* metro design button */
+button {
+  font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #0078d7;
+  border: 1px solid #0063b1;
+  border-radius: 2px;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+/* metro design <p> */
+p {
+  font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+/* metro design passenger-count */
+#passenger-count {
+  font-family: "Segoe UI", "Segoe WP", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}

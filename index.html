@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js"></script>
+    <!-- add css file -->
+    <link rel="stylesheet" href="index.css" />
+    <title>Passenger Counter</title>
+  </head>
+  <!-- A passenger counter program -->
+  <body>
+    <!-- center all -->
+    <h1>Student Counter</h1>
+    <br />
+    <p>Click the buttons to add or remove students</p>
+    <br />
+    <!-- add buttons to add or remove passengers -->
+    <button id="add-passenger">Add Student</button>
+    <button id="remove-passenger">Remove Student</button>
+    <!-- display passenger count -->
+    <p>You have:</p>
+    <br />
+    <!-- passenger-count div-->
+    <div id="passenger-count">
+      0
+      <!-- remove NaN error -->
+      <script>
+        document.getElementById("passenger-count").innerHTML = 0;
+      </script>
+    </div>
+
+    <br />
+    <p>students in the class.</p>
+    <!-- make passenger-count metro design-->
+    <style></style>
+
+    <!-- display button results in passenger-count -->
+    <script>
+      // add event listeners to buttons
+      document
+        .getElementById("add-passenger")
+        .addEventListener("click", addPassenger);
+      document
+        .getElementById("remove-passenger")
+        .addEventListener("click", removePassenger);
+
+      // add passenger function
+      function addPassenger() {
+        // get current passenger count
+        let passengerCount =
+          document.getElementById("passenger-count").innerHTML;
+        // increment passenger count
+        passengerCount++;
+        // display new passenger count
+        document.getElementById("passenger-count").innerHTML = passengerCount;
+      }
+
+      // remove passenger function
+      function removePassenger() {
+        // get current passenger count
+        let passengerCount =
+          document.getElementById("passenger-count").innerHTML;
+        // decrement passenger count
+        passengerCount--;
+        // display new passenger count
+        document.getElementById("passenger-count").innerHTML = passengerCount;
+      }
+
+      // white to grey gradient background
+      document.body.style.background =
+        "linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(211,211,211,1) 100%)";
+    </script>
+  </body>
+  <style>
+    #passenger-count {
+      width: 100px;
+      height: 100px;
+      background-color: #00a4ef;
+      border-radius: 50%;
+      color: white;
+      font-size: 50px;
+      text-align: center;
+      line-height: 100px;
+      margin: 0 auto;
+    }
+  </style>
+</html>
